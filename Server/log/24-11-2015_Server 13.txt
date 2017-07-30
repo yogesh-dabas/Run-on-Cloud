@@ -1,0 +1,9 @@
+10:4:54 - ~~~~~~~~~~~~~~~~~~~~Server 13 started!~~~~~~~~~~~~~~~~~~~~
+10:6:11 - Request from GUI1:- Run:Program2
+10:6:12 - Request from GUI1:- Run:Program2
+10:6:51 - Request from GUI1:- Run:Program2
+10:7:14 - Request from GUI1:- Run:Program2
+10:8:13 - Request from GUI1:- Run:Program2
+10:8:23 - Request from GUI1:- Run:Program2
+10:8:33 - ~~~~~~~~~~~~~~~~~~~~Server Closed!~~~~~~~~~~~~~~~~~~~~
+10:9:23 - ~~~~~~~~~~~~~~~~~~~~Server 13 started!~~~~~~~~~~~~~~~~~~~~

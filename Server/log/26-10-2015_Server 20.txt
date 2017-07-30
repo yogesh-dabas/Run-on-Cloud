@@ -1,0 +1,4 @@
+11:2:2 - ~~~~~~~~~~~~~~~~~~~~Server 20 started!~~~~~~~~~~~~~~~~~~~~
+11:3:23 - 
+Client:Yog(StatisticsSender) connected to Server 20
+11:5:16 - ~~~~~~~~~~~~~~~~~~~~Server Closed!~~~~~~~~~~~~~~~~~~~~

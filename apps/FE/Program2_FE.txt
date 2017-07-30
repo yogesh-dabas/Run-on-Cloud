@@ -1,0 +1,60 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.io.*;
+class Program2_FE extends JFrame{
+	JLabel title;
+	JPanel p;
+	JLabel nLabel;
+	JTextField n;
+	JButton submit;
+	Program2_FE(){
+		//GUI
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(400,300);
+		setLayout(new BorderLayout(50,50));
+		getContentPane().setBackground(Color.BLUE);
+		
+		title=new JLabel("999+ Factorials",JLabel.CENTER);
+		title.setFont(new Font("Verdana", 0, 20));
+		
+		nLabel=new JLabel("Enter the Number",JLabel.CENTER);
+		nLabel.setFont(new Font("Verdana", 0, 14));
+		
+		n=new JTextField(20);
+		p=new JPanel();
+		p.setLayout(new FlowLayout(50));
+		p.setBackground(Color.GREEN);
+		//Submit button
+		submit=new JButton("Submit");
+		submit.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e){
+				Program2_DS p=new Program2_DS();
+				p.setStr(n.getText());
+				try{
+					//Write the input to DS_Obj File
+					FileOutputStream fos=new FileOutputStream("tmp\\Program2_DS_Obj");
+					ObjectOutputStream oos=new ObjectOutputStream(fos);
+					oos.writeObject(p);
+					
+					//Required "EXIT"
+					System.out.println("EXIT");
+				}catch(FileNotFoundException e1){
+				}catch(IOException e1){
+				}
+				System.exit(0);
+			}
+		});
+		
+		add(title,"North");
+		p.add(nLabel);
+		p.add(n);
+		add(submit,"South");
+		add(p,"Center");
+
+		setVisible(true);
+	}
+	public static void main(String args[]){
+		Program2_FE f=new Program2_FE();
+	}
+}

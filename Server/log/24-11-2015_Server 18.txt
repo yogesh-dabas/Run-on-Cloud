@@ -1,0 +1,8 @@
+10:4:54 - ~~~~~~~~~~~~~~~~~~~~Server 18 started!~~~~~~~~~~~~~~~~~~~~
+10:6:29 - Request from GUI1:- Run:Program2
+10:7:38 - Request from GUI1:- Run:Program2
+10:7:51 - Request from GUI1:- Run:Program2
+10:7:56 - Request from GUI1:- Run:Program2
+10:7:57 - Request from GUI1:- Run:Program2
+10:8:33 - ~~~~~~~~~~~~~~~~~~~~Server Closed!~~~~~~~~~~~~~~~~~~~~
+10:9:23 - ~~~~~~~~~~~~~~~~~~~~Server 18 started!~~~~~~~~~~~~~~~~~~~~

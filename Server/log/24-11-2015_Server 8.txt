@@ -1,0 +1,7 @@
+10:4:54 - ~~~~~~~~~~~~~~~~~~~~Server 8 started!~~~~~~~~~~~~~~~~~~~~
+10:6:30 - Request from GUI1:- Run:Program2
+10:6:46 - Request from GUI1:- Run:Program2
+10:7:10 - Request from GUI1:- Run:Program2
+10:7:29 - Request from GUI1:- Run:Program2
+10:8:33 - ~~~~~~~~~~~~~~~~~~~~Server Closed!~~~~~~~~~~~~~~~~~~~~
+10:9:23 - ~~~~~~~~~~~~~~~~~~~~Server 8 started!~~~~~~~~~~~~~~~~~~~~

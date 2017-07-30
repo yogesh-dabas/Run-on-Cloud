@@ -1,0 +1,48 @@
+//1,0,0
+//5000
+import java.io.*;
+public class Program4{
+	public static void main(String args[]){
+		try{
+			//Open Data File
+			ObjectInputStream ois=new ObjectInputStream(new FileInputStream("tmp\\Program4_DS_Obj"));
+			Program4_DS pd=(Program4_DS)ois.readObject();
+			
+			//Input
+			int size=Integer.parseInt(pd.getSize());
+			String arr[]=pd.getArray().split(" ");
+			System.out.println("Input Array: ");
+			for(int i=0;i<size;i++){
+				System.out.print(arr[i]+" ");
+			}
+			System.out.println();
+			
+			//Operation and Results
+			int a[]=new int[size];
+			for(int i=0;i<size;i++){
+				a[i]=Integer.parseInt(arr[i]);
+			}
+
+			//Sorting
+  			for(int i=0;i<size;i++){
+  				for(int k=1;k<size-i;k++){
+					if(a[k]<a[k-1]){
+						int t=a[k];
+						a[k]=a[k-1];
+						a[k-1]=t;
+					}
+				}
+  			}
+ 			System.out.println("Array after Bubble Sort: ");
+			for(int i=0;i<size;i++){
+				System.out.print(a[i]+" ");
+			}
+			
+		}catch(ClassNotFoundException e){
+			e.printStackTrace();
+		}catch(IOException e){
+			e.printStackTrace();
+		}
+			
+	}
+}

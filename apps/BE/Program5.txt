@@ -1,0 +1,31 @@
+//0,1,0
+//5000
+import java.io.*;
+public class Program5{
+	public static void main(String args[]){
+		try{
+			//Open Data File
+			ObjectInputStream ois=new ObjectInputStream(new FileInputStream("tmp\\Program5_DS_Obj"));
+			Program5_DS pd=(Program5_DS)ois.readObject();
+			
+			//Input
+			int len=Integer.parseInt(pd.getStr());
+			
+			//Operation and Results
+			int a=1;
+			int b=1;
+			System.out.print("Fibonacci series with "+len+" Elements: "+a+" "+b);
+			for(int i=2;i<len;i++){
+				int c=a+b;
+				a=b;
+				b=c;
+				System.out.print(" "+c);
+			}
+			
+		}catch(ClassNotFoundException e){
+			e.printStackTrace();
+		}catch(IOException e){
+			e.printStackTrace();
+		}
+	}
+}

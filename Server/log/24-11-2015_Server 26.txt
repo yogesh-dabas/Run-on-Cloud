@@ -1,0 +1,10 @@
+10:4:54 - ~~~~~~~~~~~~~~~~~~~~Server 26 started!~~~~~~~~~~~~~~~~~~~~
+10:6:9 - Request from GUI1:- Run:Program2
+10:6:40 - Request from GUI1:- Run:Program2
+10:7:2 - Request from GUI1:- Run:Program2
+10:7:4 - Request from GUI1:- Run:Program2
+10:7:15 - Request from GUI1:- Run:Program2
+10:7:27 - Request from GUI1:- Run:Program2
+10:8:19 - Request from GUI1:- Run:Program2
+10:8:33 - ~~~~~~~~~~~~~~~~~~~~Server Closed!~~~~~~~~~~~~~~~~~~~~
+10:9:23 - ~~~~~~~~~~~~~~~~~~~~Server 26 started!~~~~~~~~~~~~~~~~~~~~

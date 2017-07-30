@@ -1,0 +1,41 @@
+//1,0,0
+//5000
+import java.io.*;
+
+public class Program3{
+	public static void main(String args[]){
+		try{
+			//Open Data File
+			ObjectInputStream ois=new ObjectInputStream(new FileInputStream("tmp\\Program3_DS_Obj"));
+			Program3_DS pd=(Program3_DS)ois.readObject();
+			
+			//Input
+			int size=Integer.parseInt(pd.getSize());
+			String arr[]=pd.getArray().split(" ");
+			System.out.println("Input Array: ");
+			for(int i=0;i<size;i++){
+				System.out.print(arr[i]+" ");
+			}
+			System.out.println();
+			//Operation and Results
+			int a[]=new int[size];
+			for(int i=0;i<size;i++){
+				a[i]=Integer.parseInt(arr[i]);
+			}
+
+			//Finding Minimum Element
+  			int min=a[0];
+  			for(int i=1;i<size;i++){
+  				if(a[i]<min)
+    				min=a[i];
+  			}
+ 			 System.out.println("Minimum Element: "+min);
+			
+		}catch(ClassNotFoundException e){
+			e.printStackTrace();
+		}catch(IOException e){
+			e.printStackTrace();
+		}
+			
+	}
+}

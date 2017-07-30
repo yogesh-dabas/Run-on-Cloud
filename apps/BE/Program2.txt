@@ -1,0 +1,64 @@
+//0,1,0
+//15000
+import java.io.*;
+class Factorial{
+ int res[];
+ int n,size=1;
+
+ Factorial(int n){
+  this.n=n;
+  res=new int[10000];
+  res[0]=1;
+ }
+
+ void multiply(int n){
+  int carry=0;
+  for(int i=0;i<size;i++){
+   int t=res[i]*n+carry;
+   res[i]=t%10;
+   carry=t/10;
+  }
+  while(carry!=0){
+   res[size++]=carry%10;
+   carry/=10;
+  }
+ }
+  
+  void findFactorial(){
+   for(int i=n;i>1;i--){
+    multiply(i);
+   }
+  }
+  
+ void printFactorial(){
+  for(int i=size-1;i>=0;i--){
+    System.out.print(res[i]);
+    if(i%100==0){
+        System.out.print(",");
+    }
+  }
+ }
+}
+public class Program2{
+	public static void main(String args[]){
+		try{
+			//Open Data File
+			ObjectInputStream ois=new ObjectInputStream(new FileInputStream("tmp\\Program2_DS_Obj"));
+			Program2_DS pd=(Program2_DS)ois.readObject();
+			
+			//Input
+			int n=Integer.parseInt(pd.getStr());
+			
+			//Operation and Results
+			System.out.println("Factorial of "+n+" is: ");
+			Factorial f=new Factorial(n);
+  			f.findFactorial();
+ 			f.printFactorial();
+		}catch(ClassNotFoundException e){
+			e.printStackTrace();
+		}catch(IOException e){
+			e.printStackTrace();
+		}
+			
+	}
+}

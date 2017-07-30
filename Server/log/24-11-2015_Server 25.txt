@@ -1,0 +1,6 @@
+10:4:54 - ~~~~~~~~~~~~~~~~~~~~Server 25 started!~~~~~~~~~~~~~~~~~~~~
+10:5:13 - Tasklist Request from GUI1:- tasklist
+10:6:20 - Request from GUI1:- Run:Program2
+10:7:34 - Request from GUI1:- Run:Program2
+10:8:33 - ~~~~~~~~~~~~~~~~~~~~Server Closed!~~~~~~~~~~~~~~~~~~~~
+10:9:23 - ~~~~~~~~~~~~~~~~~~~~Server 25 started!~~~~~~~~~~~~~~~~~~~~

@@ -1,0 +1,10 @@
+import java.io.Serializable;
+public class Program2_DS implements Serializable{
+	private String str;
+	public void setStr(String str){
+		this.str=str;
+	}
+	public String getStr(){
+		return str;
+	}
+}

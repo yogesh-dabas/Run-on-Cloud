@@ -1,0 +1,11 @@
+10:4:54 - ~~~~~~~~~~~~~~~~~~~~Server 12 started!~~~~~~~~~~~~~~~~~~~~
+10:6:47 - Request from GUI1:- Run:Program2
+10:6:48 - Request from GUI1:- Run:Program2
+10:7:3 - Request from GUI1:- Run:Program2
+10:7:17 - Request from GUI1:- Run:Program2
+10:7:21 - Request from GUI1:- Run:Program2
+10:8:5 - Request from GUI1:- Run:Program2
+10:8:30 - Request from GUI1:- Run:Program2
+10:8:33 - ~~~~~~~~~~~~~~~~~~~~Server Closed!~~~~~~~~~~~~~~~~~~~~
+10:9:23 - ~~~~~~~~~~~~~~~~~~~~Server 12 started!~~~~~~~~~~~~~~~~~~~~
+10:10:48 - Tasklist Request from GUI1:- tasklist

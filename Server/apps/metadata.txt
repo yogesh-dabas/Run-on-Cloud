@@ -1,0 +1,9 @@
+6
+Program1,Check for Palindrome:5
+Program2,Find 999 factorial:15
+Program3,Min. Element in 2D Array:5
+Program4,Bubble Sorting of Array:5
+Program5,Fobonacci Series:5
+Program6,Test:10
+Program7,Test2:20
+

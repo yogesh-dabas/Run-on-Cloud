@@ -1,0 +1,28 @@
+//1,0,0
+//5000
+import java.io.*;
+public class Program1{
+	public static void main(String args[]){
+		try{
+			//Open Data File
+			ObjectInputStream ois=new ObjectInputStream(new FileInputStream("tmp\\Program1_DS_Obj"));
+			Program1_DS pd=(Program1_DS)ois.readObject();
+			System.out.println("~~~~~~~~~~~Palindrome Check ~~~~~~~~~~~~~");
+			//Input
+			String s=pd.getStr();
+			//Operation and Results
+			StringBuffer sb=new StringBuffer(s);
+			sb.reverse();
+			String s1=sb.toString();
+			if(s.equals(s1)){
+				System.out.println(s+" is Palindrome!!");
+			}else{
+				System.out.println(s+" is not Palindrome!!");
+			}
+		}catch(ClassNotFoundException e){
+			e.printStackTrace();
+		}catch(IOException e){
+			e.printStackTrace();
+		}
+	}
+}
